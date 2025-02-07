@@ -1,0 +1,105 @@
+Technical Checklist Before Going Live
+1. Cross-Browser Compatibility
+Test your site in all major browsers:
+Chrome, Firefox, Safari, Edge.
+Check for consistent layout, fonts, colors, and features across browsers.
+Ensure JavaScript functionality (like your hamburger menu) works in all browsers.
+
+2. Responsiveness
+Test your site on various devices and screen sizes:
+Phones, tablets, laptops, desktops.
+Use browser developer tools (Ctrl + Shift + I or Cmd + Option + I) to test different screen resolutions.
+Verify:
+Hamburger menu works properly on smaller screens.
+Content adjusts to screen size without horizontal scrolling.
+Images resize correctly (max-width: 100%; height: auto;).
+
+3. Links and Navigation
+Test all links and buttons:
+Ensure internal links (e.g., /readings.html) and external links (e.g., social media) work as expected.
+Verify navigation menu items direct to the correct sections/pages.
+Check for broken links:
+Use tools like Broken Link Checker or a browser extension.
+
+4. Forms
+Test all forms (e.g., Contact Us):
+Ensure required fields work properly.
+Verify submission and any success/error messages.
+Confirm the forms send data correctly (e.g., to your email or database).
+
+5. Performance Optimization
+Page Load Speed:
+Use tools like Google PageSpeed Insights or GTmetrix.
+Optimize large images with tools like TinyPNG or ImageOptim.
+Minify your CSS, JavaScript, and HTML using tools like Minify.
+Ensure CSS and JavaScript files are loaded efficiently:
+Combine and minify files where possible.
+Defer or load non-critical scripts asynchronously.
+
+6. Accessibility
+Check your site for accessibility:
+Use tools like WAVE or the Lighthouse accessibility audit.
+Add alt text for all images.
+Ensure text is legible (good contrast between text and background).
+Verify keyboard navigation works (e.g., users can navigate the menu using Tab key).
+
+7. SEO (Search Engine Optimization)
+Add meta tags to all pages:
+<meta name="description" content="Description of the page.">
+<meta name="keywords" content="relevant, keywords, for, your, site">
+Add meaningful title tags for all pages (e.g., <title>About Us - Helping Our Community</title>).
+Use proper heading hierarchy:
+Only one <h1> per page, followed by <h2>, <h3>, etc.
+Add a robots.txt file to guide search engines.
+
+8. Analytics and Tracking
+Add tracking tools (if needed):
+Google Analytics for visitor tracking.
+Facebook Pixel or other trackers for marketing purposes.
+Test if analytics are recording data correctly.
+
+9. Security
+HTTPS:
+Ensure your site uses HTTPS (install an SSL certificate if necessary).
+Tools like Let’s Encrypt can help you get a free SSL certificate.
+Prevent vulnerabilities:
+Remove unused files, scripts, or commented-out code.
+Disable directory listing on your server.
+Ensure forms are secure (e.g., validate inputs to prevent SQL injection or XSS).
+
+10. Backup
+Create a full backup of your site before going live:
+HTML, CSS, JS, and image files.
+Any databases (if used).
+
+11. Hosting and Domain
+Verify hosting:
+Ensure your server is configured properly.
+Test the site on your server (e.g., via a staging environment) before pointing your domain.
+Test your domain:
+Ensure the domain is correctly pointed to your hosting server.
+
+12. Error Handling
+Check for error pages (e.g., 404, 500):
+Create a custom 404 page for broken links (e.g., /404.html).
+Test handling of nonexistent pages by entering invalid URLs.
+Debug your site:
+Open the Console in developer tools and ensure there are no JavaScript errors.
+
+13. Favicon
+Add a favicon to your site for branding:
+Create a 16x16 or 32x32 .ico file and reference it in your HTML:
+html
+Αντιγραφή κώδικα
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+14. Final Visual and Functional Check
+Do a final walkthrough:
+Scroll through all pages to check for alignment, spacing, and any design issues.
+Test interactive elements like buttons, animations, or modals.
+Tools for Testing
+Responsiveness: Google Mobile-Friendly Test
+Performance: Google PageSpeed Insights
+Broken Links: Broken Link Checker
+Cross-Browser Testing: BrowserStack
+Accessibility: WAVE Web Accessibility Tool

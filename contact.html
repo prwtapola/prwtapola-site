@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us - Reach out to us directly.">
+    <meta name="author" content="Your Team Name">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class = "contact-page">
+<header>
+    <!-- Social Media Bar-->
+    <div class="social-bar">
+        <div class="social-icons">
+            <a href="https://twitter.com/Anasygkrotisi?t=RvTLBeEMRuUOnyKGIHyIcA&s=09" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61550797755901&locale=el_GR" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/prw.ta.pol.a?igsh=bDB2aXQxOXpyOGZi" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    <div class="header-container">
+        <a href="index.html">
+            <img src="images/star.png" alt="Logo" width="90" height="90">
+        </a>
+        <h1> ΠΡΩΤΟΒΟΥΛΙΑ ΓΙΑ ΤΗΝ ΤΑΞΙΚΗ ΚΑΙ ΠΟΛΙΤΙΚΗ ΑΝΑΣΥΓΚΡΟΤΗΣΗ</h1>
+        <p>Επικοινωνήστε μαζί μας!</p>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle Menu">
+        ☰
+    </button>
+    <nav>
+        <ul class = "menu">
+            <li><a href="index.html" >Αρχική</a></li>
+            <li><a href="Articles.html">Επικαιρότητα και άρθρα</a></li>
+            <li><a href="events.html">Εκδηλώσεις</a></li>
+            <li class="dropdown">
+                <a href="aboutus.html" >Για εμάς</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Readings.html">Τα κείμενα μας</a></li>
+                    <li><a href="articles/diakirixi.html">Η διακήρυξη μας</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" class="active">Επικοινωνία</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <section class="form-section">
+        <h3>Send Us a Message</h3>
+        <form action="https://formsubmit.co/el/gesano" method="POST">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Message Subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <!-- Hidden security features -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <section class="contact-channels">
+        <h3>Connect with Us</h3>
+        <p>You can reach us through the following channels:</p>
+        <ul>
+            <li>Email: <a href="mailto:taxiki-anasygkrotisi@protonmail.com">taxiki-anasygkrotisi@protonmail.com</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/prw.ta.pol.a?igsh=bDB2aXQxOXpyOGZi">@prw.ta.pol.a</a></li>
+            <li>Facebook: <a href="https://www.facebook.com/profile.php?id=61550797755901&locale=el_GR">facebook.com/prwtovoulia</a></li>
+            <li>Twitter: <a href="https://twitter.com/Anasygkrotisi?t=RvTLBeEMRuUOnyKGIHyIcA&s=09">@Anasygrotisi</a></li>
+
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>Contact us: <a href="mailto:taxiki-anasygkrotisi@protonmail.com">Email Us</a></p>
+    <p>Follow us:
+        <a href="https://www.instagram.com/prw.ta.pol.a?igsh=bDB2aXQxOXpyOGZi"><img src="images/instagram.png" alt="Instagram" width="20" height="20"></a>
+        <a href="https://www.facebook.com/profile.php?id=61550797755901&locale=el_GR"><img src="images/facebook.png" alt="Facebook" width="20" height="20"></a>
+        <a href="https://twitter.com/Anasygkrotisi?t=RvTLBeEMRuUOnyKGIHyIcA&s=09" target="_blank"> <img src="images/twitter.png" alt="Twitter" width="25" height="25"></a>
+    </p>
+    <p>© 2024-2025, Prw.ta.pol.a</p>
+</footer>
+<script src="menu.js"></script>
+</body>
+</html>
