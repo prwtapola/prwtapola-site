@@ -108,7 +108,7 @@ nav ul li a.active, nav ul li a:hover {
         background: #333;
         width: 100%;
         position: absolute;
-        top: 50px; /* Adjust as needed */
+        top: 50px;
         left: 0;
         z-index: 1000;
     }
@@ -158,6 +158,7 @@ nav ul li a.active, nav ul li a:hover {
     margin:0;
 }
 
+/*
 .dropdown-menu li a {
     color: white;
     display: block;
@@ -167,6 +168,7 @@ nav ul li a.active, nav ul li a:hover {
     border-radius: 0;
     white-space: nowrap;
 }
+*/
 
 .dropdown-menu li a:hover {
     width: 89%;
