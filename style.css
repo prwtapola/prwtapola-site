@@ -14,6 +14,25 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    padding-top:50px;
+}
+
+html, body {
+    overflow-x: visible; /* Prevents horizontal scrolling */
+    max-width: 100%; /* Ensures content doesn’t stretch too far */
+}
+
+main, .container, .content {
+    max-width: 100%;  /* Prevents content from stretching too wide */
+    word-wrap: break-word; /* Ensures long words break properly */
+    overflow-wrap: break-word;
+    overflow-x: visible; /* Allows horizontal content if needed */
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 header h1 {
@@ -107,7 +126,7 @@ nav ul li a.active, nav ul li a:hover {
         flex-direction: column;
         background: #333;
         width: 100%;
-        position: absolute;
+        position: fixed !important;
         top: 50px;
         left: 0;
         z-index: 1000;
@@ -118,15 +137,15 @@ nav ul li a.active, nav ul li a:hover {
     }
 
     .menu-toggle {
-        position: absolute;
-        top: 10px;
-        right: 20px;
+        position: fixed !important ;
+        top: 50px;
+        right: 10px;
         font-size: 28px;
         background: none;
         border: none;
-        color: white;
+        color: #8c1d1d;
         cursor: pointer;
-        z-index: 1500;
+        z-index: 2000;
     }
 
     .dropdown .dropdown-menu {
@@ -158,18 +177,6 @@ nav ul li a.active, nav ul li a:hover {
     margin:0;
 }
 
-/*
-.dropdown-menu li a {
-    color: white;
-    display: block;
-    width:100%;
-    padding: 4px 8px;
-    text-align: left;
-    border-radius: 0;
-    white-space: nowrap;
-}
-*/
-
 .dropdown-menu li a:hover {
     width: 89%;
     background: #555;
@@ -198,7 +205,7 @@ img, video {
     align-items: center; /* Ensures vertical alignment */
     gap: 10px; /* Adds spacing between icons */
     margin-left: auto;
-    margin-right:15px;
+    margin-right:20px;
 }
 .social-icons a {
     display: flex;
@@ -698,7 +705,7 @@ footer a:hover {
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: #fff;
+    color: #8c1d1d;
     position: absolute;
     top: 5px;
     right: 35px;
@@ -848,7 +855,7 @@ footer a:hover {
     .menu-toggle {
         display: block; /* Show the hamburger button */
         font-size: 1.5rem;
-        color: #fff;
+        color: #8c1d1d;
         position: absolute;
         top: 10px;
         right: 10px;

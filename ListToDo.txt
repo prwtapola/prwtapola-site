@@ -16,4 +16,10 @@
 10.Να βάλω τα αρχεία μου στο git
 11. Να κατεβάσω αν είναι το gitdesktop-->not
 12. Να αγοράσω το domain
-13. 
+
+13. Να δω τι γίνεται με το λινκ στο fb
+14. Να πάω λίγο πιο αριστερά τα social media στο social bar
+15.Να κάνω sticky το toggle menu 
+
+git config --global user.name "prwtapola"
+git config --global user.email "protapola03@hotmail.com"

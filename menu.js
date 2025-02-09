@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Close menu when clicking outside of it
+        document.addEventListener("click", function (event) {
+            if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.remove("visible");
+            }
+        });
+
     // Dropdown Menu Click Behavior (for tablets & mobile)
     dropdownLinks.forEach((dropdownLink) => {
         dropdownLink.addEventListener("click", function (event) {
@@ -39,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+//for the index - homepage slides
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
