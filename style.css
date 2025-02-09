@@ -17,6 +17,7 @@ header {
     padding-top:50px;
 }
 
+
 html, body {
     overflow-x: visible; /* Prevents horizontal scrolling */
     max-width: 100%; /* Ensures content doesn’t stretch too far */
@@ -134,18 +135,6 @@ nav ul li a.active, nav ul li a:hover {
 
     .menu.visible {
         display: flex; /* Show menu when toggled */
-    }
-
-    .menu-toggle {
-        position: fixed !important ;
-        top: 50px;
-        right: 10px;
-        font-size: 28px;
-        background: none;
-        border: none;
-        color: #8c1d1d;
-        cursor: pointer;
-        z-index: 2000;
     }
 
     .dropdown .dropdown-menu {
@@ -699,54 +688,6 @@ footer a:hover {
 
 /* Responsive Design */
 
-/* Hide the menu toggle button on larger screens */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #8c1d1d;
-    position: absolute;
-    top: 5px;
-    right: 35px;
-    z-index: 1001;
-    cursor: pointer;
-}
-
-/* Show the hamburger menu button on smaller screens */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul.menu {
-        display: none; /* Hide the menu by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background: #333; /* Matches menu background */
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        padding: 10px 0;
-    }
-
-    nav ul.menu.visible {
-        display: flex; /* Show menu when toggled */
-    }
-
-    nav ul li {
-        text-align: center; /* Center-align menu items */
-        margin: 0;
-        padding: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
 
 
 
@@ -758,10 +699,19 @@ footer a:hover {
     }
 
     /* Hamburger Menu Toggle Button */
-    .menu-toggle {
-        display: block; /* Show the hamburger button */
-    }
+        .menu-toggle {
+            display: block;  /*Show the hamburger button*/
+            font-size: 1.5rem;
+            color: #8c1d1d;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 1500;
 
+        }
     /* Hide the menu by default */
     nav ul {
         display: none;
@@ -812,6 +762,7 @@ footer a:hover {
     .readings-container {
                 grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
             }
+
 }
 
 /* Phone screens (480px and smaller) */
@@ -853,16 +804,17 @@ footer a:hover {
 
     /* Hamburger Menu Toggle Button */
     .menu-toggle {
-        display: block; /* Show the hamburger button */
+        display: block;  /*Show the hamburger button*/
         font-size: 1.5rem;
         color: #8c1d1d;
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        position: fixed;
+        top: 15px;
+        left: 15px;
         background: none;
         border: none;
         cursor: pointer;
-        z-index: 1001;
+        z-index: 1500;
+
     }
 
     /* Hide the menu by default */
