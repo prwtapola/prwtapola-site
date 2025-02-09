@@ -105,6 +105,10 @@ nav ul li a.active, nav ul li a:hover {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+    /*hides toggle menu on large screens*/
+    .menu-toggle {
+            display: none;
+        }
 }
 /* Ensure dropdown is hidden by default on tablets & mobile */
 @media (max-width: 1280px) {
@@ -119,6 +123,11 @@ nav ul li a.active, nav ul li a:hover {
         display: block;
     }
 }
+
+@media (min-width:769px) {
+.menu-toggle {
+        display: none;
+    }}
 
 
 @media (max-width: 768px) {
@@ -248,6 +257,7 @@ h2 {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
 
  .event-details, .cta-button {
     display: inline-block;
@@ -698,6 +708,7 @@ footer a:hover {
         padding: 10px; /* Reduce body padding */
     }
 
+
     /* Hamburger Menu Toggle Button */
         .menu-toggle {
             display: block;  /*Show the hamburger button*/
@@ -743,7 +754,7 @@ footer a:hover {
 
     .latest-readings, .highlight-event, .call-to-action,
     .about-section, .form-section, .reading-detail {
-        width: 95%; /* Reduce width for smaller screens */
+        width: 90%; /* Reduce width for smaller screens */
     }
 
     .read-more, .event-details, .cta-button {
@@ -778,7 +789,7 @@ footer a:hover {
 
     .latest-readings, .highlight-event, .call-to-action,
     .about-section, .form-section, .reading-detail {
-        width: 100%; /* Maximize width for small screens */
+        width: 90%; /* Maximize width for small screens */
         padding: 15px; /* Reduce padding for smaller areas */
     }
     .readings-container {
