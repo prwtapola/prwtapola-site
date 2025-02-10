@@ -590,6 +590,30 @@ article p {
     padding: 20px;
 }
 
+/* style for specific event*/
+
+.reading-detail h4 {
+    text-align: left !important;
+    display: block; /* Ensures it takes full width */
+    width: 100%; /* Ensures it spans full width */
+}
+
+
+.event-poster {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically (if needed) */
+    margin: 20px auto;        /* Centers the div itself */
+    text-align: center;       /* Ensures text inside is centered */
+}
+
+.event-poster img {
+    width: 80%;
+    max-width: 400px;  /* Limits max width */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* index Page Styles for articles container */
 .index-list {
     padding: 15px;
@@ -856,4 +880,6 @@ footer a:hover {
         padding: 6px 10px;
     }
 }
+
+
 
