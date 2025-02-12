@@ -77,24 +77,21 @@ showSlide(slideIndex);
 
 
 //for the contact form connection to emailJS
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  (function(){
-      emailjs.init("hmxtnp8hdI-ksJ0YA"); // Replace with your EmailJS Public Key
-  })();
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form from refreshing the page
 
-  function sendEmail(event) {
-      event.preventDefault(); // Prevents default form submission
+        emailjs.sendForm("service_o6kkwc3", "template_0or1366", this, "hmxtnp8hdI-ksJ0YA")
+            .then(
+                function(response) {
+                    console.log("Success!", response.status, response.text);
+                    window.location.href = "thankyou.html"; // Redirect after success
+                },
+                function(error) {
+                    console.log("Failed...", error);
+                }
+            );
+    });
+});
 
-      emailjs.sendForm("service_o6kkwc3", "template_0or1366", event.target)
-      .then(function(response) {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("Message sent successfully!");
-          window.location.href = "thankyou.html"; // Redirect to thank you page
-      }, function(error) {
-          console.log("FAILED...", error);
-          alert("Error sending message. Try again.");
-      });
-  }
-</script>
 
