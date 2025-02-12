@@ -75,12 +75,19 @@ setInterval(nextSlide, 5000);
 // Show the first slide on load
 showSlide(slideIndex);
 
+let lastSubmissionTime = 0;
 
 //for the contact form connection to emailJS
 document.addEventListener("DOMContentLoaded", function() {
     emailjs.init("hmxtnp8hdI-ksJ0YA");
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form from refreshing the page
+        const now = Date.now();
+        if (now - lastSubmissionTime < 10000) { // 10 seconds delay
+            alert("Please wait before submitting again.");
+                return;
+        }
+        lastSubmissionTime = now;
 
         emailjs.sendForm("service_o6kkwc3", "template_0or1366", this)
             .then(
