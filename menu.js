@@ -78,10 +78,11 @@ showSlide(slideIndex);
 
 //for the contact form connection to emailJS
 document.addEventListener("DOMContentLoaded", function() {
+    emailjs.init("hmxtnp8hdI-ksJ0YA");
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form from refreshing the page
 
-        emailjs.sendForm("service_o6kkwc3", "template_0or1366", this, "hmxtnp8hdI-ksJ0YA")
+        emailjs.sendForm("service_o6kkwc3", "template_0or1366", this)
             .then(
                 function(response) {
                     console.log("Success!", response.status, response.text);

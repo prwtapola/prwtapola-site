@@ -60,7 +60,7 @@
 
     <section class="form-section">
         <h3>Send Us a Message</h3>
-        <form id="contact-form" onsubmit="sendEmail(event)">
+        <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
 
@@ -99,6 +99,10 @@
     </p>
     <p>© 2024-2025, Prw.ta.pol.a</p>
 </footer>
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- Initialize EmailJS -->
+<script> emailjs.init("hmxtnp8hdI-ksJ0YA");</script>
 <script src="menu.js"></script>
 </body>
 </html>
