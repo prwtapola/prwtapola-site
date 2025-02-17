@@ -23,3 +23,8 @@
 
 git config --global user.name "prwtapola"
 git config --global user.email "protapola03@hotmail.com"
+
+
+16. Nα τσεκάρω το responsitivity του aboutus σε 2560 * 1440
+
+
