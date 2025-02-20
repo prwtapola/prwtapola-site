@@ -18,13 +18,16 @@
 12. Να αγοράσω το domain
 
 13. Να δω τι γίνεται με το λινκ στο fb
-14. Να πάω λίγο πιο αριστερά τα social media στο social bar
-15.Να κάνω sticky το toggle menu 
+14. Να πάω λίγο πιο αριστερά τα social media στο social bar --> done
+15.Να κάνω sticky το toggle menu -->done
 
 git config --global user.name "prwtapola"
 git config --global user.email "protapola03@hotmail.com"
 
 
 16. Nα τσεκάρω το responsitivity του aboutus σε 2560 * 1440
+17. Να ονομάσω τα αρχεία μου με greeklish και να φτιάξω αντίστοιχα τα λινκ στον κώδικα
+18. Να φτιάξω sitemap
+
 
 
