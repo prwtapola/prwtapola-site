@@ -26,8 +26,13 @@ git config --global user.email "protapola03@hotmail.com"
 
 
 16. Nα τσεκάρω το responsitivity του aboutus σε 2560 * 1440
-17. Να ονομάσω τα αρχεία μου με greeklish και να φτιάξω αντίστοιχα τα λινκ στον κώδικα
-18. Να φτιάξω sitemap
+17. Να ονομάσω τα αρχεία μου με greeklish και να φτιάξω αντίστοιχα τα λινκ στον κώδικα --> done
+18. Να φτιάξω sitemap και robots.txt -->done
+19. Να αλλαξω χρώμα στα images στο footer 
+20. Να καθαρίσω τον φάκελο που έχω ανεβασμένο στο git
+21. Να φτιάξω τον slider
+22. Να σκεφτώ πως θα φτιάξω το κείμενο στα transparent boxes
+
 
 
 
