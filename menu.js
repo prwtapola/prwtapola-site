@@ -47,10 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //for the index - homepage slides
+
+// Select elements
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 
+// Show a specific slide
 function showSlide(n) {
     slides.forEach((slide, i) => {
         slide.style.display = i === n ? "block" : "none";
@@ -58,22 +61,45 @@ function showSlide(n) {
     });
 }
 
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
+// Function to move slides using arrows
+function changeSlide(direction) {
+    slideIndex += direction;
+
+    // Loop back to first slide if at the end
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+
     showSlide(slideIndex);
 }
 
-// Manual slide control
+// Manual slide control using dots
 function currentSlide(n) {
     slideIndex = n - 1;
     showSlide(slideIndex);
 }
 
 // Auto-slide every 5 seconds
-setInterval(nextSlide, 5000);
+const autoSlide = setInterval(() => changeSlide(1), 5000);
 
-// Show the first slide on load
+// Stop auto-slide when user interacts with arrows or dots
+function resetAutoSlide() {
+    clearInterval(autoSlide);
+    setTimeout(() => {
+        setInterval(() => changeSlide(1), 5000);
+    }, 5000);
+}
+
+// Attach event listeners to dots (manual control)
+dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+        currentSlide(i + 1);
+        resetAutoSlide();
+    });
+});
+
+// Show the first slide on page load
 showSlide(slideIndex);
+
 
 let lastSubmissionTime = 0;
 
