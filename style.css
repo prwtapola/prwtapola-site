@@ -279,7 +279,7 @@ h2 {
     position: relative;
     width: 80%;
     max-width: 600px;
-    height: 500px;
+    height: 650px;
     margin: 40px auto;
     text-align: center;
     padding: 20px;
@@ -420,6 +420,9 @@ h2, h3 {
     width: 90%;
     max-width: 800px;
 }
+.form-section h1 {
+    color:#222;
+}
 
 form {
     display: flex;
@@ -472,10 +475,17 @@ form input, form textarea {
     width: 90%;
     max-width: 1300px;
 }
+.readings-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
 .readings-list h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #222;
+    font-size:20px;
 }
 
 .readings-list h3 {
@@ -484,10 +494,11 @@ form input, form textarea {
     color: #222;
 }
 
-.readings-list p2 {
-    text-align: left;
+
+.readings-list p {
+    text-align: justify;
     margin-bottom: 20px;
-    color: #222;
+    color: #555;
 }
 
 
@@ -523,6 +534,22 @@ article {
     text-align: justify;
     width: 100%;
 }
+.article-content h2 {
+    text-align:center;
+    margin: 10px 0;
+    font-size:20px;
+    }
+
+.article-content h2 a {
+    color: #222;
+    text-decoration: none;
+}
+
+article-content h2 a:hover {
+    text-decoration: underline;
+}
+
+
 .article-date {
     font-size: 0.9rem;
     color: #555;
@@ -595,6 +622,13 @@ article p {
     color: #222;
 }
 
+.reading-detail h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 20px
+}
+
 .reading-detail p {
     margin-bottom: 15px;
     color: #555;
@@ -627,7 +661,7 @@ article p {
     max-width: 1300px;
 }
 
-.events-list h2, .index-list h2 {
+.events-list h1, .index-list h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #222;
