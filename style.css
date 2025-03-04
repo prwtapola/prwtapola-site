@@ -388,7 +388,7 @@ h2 {
 /* aboutus page */
 
 .aboutus-page {
-    background-image: url('images/background.jpg');
+    background-image: url('images/background2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -613,7 +613,7 @@ article p {
 /* article Detail Page */
 
 .subreadings-pages {
-    background-image: url('images/background.jpg');
+    background-image: url('images/background2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -766,7 +766,7 @@ article img {
 
 /* Contact Page Background */
 .contact-page {
-    background-image: url('images/background.jpg');
+    background-image: url('images/background2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
