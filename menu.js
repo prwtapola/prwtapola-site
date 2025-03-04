@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //for the index - homepage slides
-
 // Select elements
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
+const sliderContainer = document.querySelector(".slider"); // The main slider wrapper
 
 // Show a specific slide
 function showSlide(n) {
@@ -74,31 +74,45 @@ function changeSlide(direction) {
 
 // Manual slide control using dots
 function currentSlide(n) {
-    slideIndex = n - 1;
+    slideIndex = n; // Set index to clicked dot
     showSlide(slideIndex);
-}
-
-// Auto-slide every 5 seconds
-const autoSlide = setInterval(() => changeSlide(1), 7000);
-
-// Stop auto-slide when user interacts with arrows or dots
-function resetAutoSlide() {
-    clearInterval(autoSlide);
-    setTimeout(() => {
-        setInterval(() => changeSlide(1), 7000);
-    }, 7000);
 }
 
 // Attach event listeners to dots (manual control)
 dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-        currentSlide(i + 1);
-        resetAutoSlide();
-    });
+    dot.addEventListener("click", () => currentSlide(i));
 });
+
+// **SWIPE FUNCTIONALITY FOR TOUCHSCREENS**
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Detect touch start
+sliderContainer.addEventListener("touchstart", (event) => {
+    touchStartX = event.touches[0].clientX;
+});
+
+// Detect touch end
+sliderContainer.addEventListener("touchend", (event) => {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+// Function to determine swipe direction
+function handleSwipe() {
+    let swipeThreshold = 50; // Minimum distance required to register a swipe
+    if (touchStartX - touchEndX > swipeThreshold) {
+        changeSlide(1); // Swipe left → Next slide
+    } else if (touchEndX - touchStartX > swipeThreshold) {
+        changeSlide(-1); // Swipe right → Previous slide
+    }
+}
 
 // Show the first slide on page load
 showSlide(slideIndex);
+
+
+
 
 
 let lastSubmissionTime = 0;
