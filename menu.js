@@ -79,14 +79,14 @@ function currentSlide(n) {
 }
 
 // Auto-slide every 5 seconds
-const autoSlide = setInterval(() => changeSlide(1), 5000);
+const autoSlide = setInterval(() => changeSlide(1), 7000);
 
 // Stop auto-slide when user interacts with arrows or dots
 function resetAutoSlide() {
     clearInterval(autoSlide);
     setTimeout(() => {
-        setInterval(() => changeSlide(1), 5000);
-    }, 5000);
+        setInterval(() => changeSlide(1), 7000);
+    }, 7000);
 }
 
 // Attach event listeners to dots (manual control)
