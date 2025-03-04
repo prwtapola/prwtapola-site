@@ -30,7 +30,7 @@ git config --global user.email "protapola03@hotmail.com"
 18. Να φτιάξω sitemap και robots.txt -->done
 19. Να αλλαξω χρώμα στα images στο footer 
 20. Να καθαρίσω τον φάκελο που έχω ανεβασμένο στο git
-21. Να φτιάξω τον slider
+21. Να φτιάξω τον slider -->done
 22. Να σκεφτώ πως θα φτιάξω το κείμενο στα transparent boxes
 
 

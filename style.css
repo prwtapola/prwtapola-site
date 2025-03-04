@@ -797,6 +797,11 @@ footer {
     margin-top: 20px;
 }
 
+.footer p {
+  color: #ddd; /* Softer than pure white */
+  font-size: 14px; /* Slightly smaller for better balance */
+}
+
 footer a {
     color: #8c1d1d;
     text-decoration: none;
@@ -805,6 +810,27 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+p a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: baseline;
+  margin-bottom: -4px; /* Moves the icon down */
+}
+.footer-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px; /* Adjust spacing */
+}
+
+.footer-icons a img, p a img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-icons a img:hover, p a img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
 
 /* Responsive Design */
 
