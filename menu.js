@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
-const sliderContainer = document.querySelector(".slider"); // The main slider wrapper
+const sliderContainer = document.querySelector(".slides-container"); // The main slider wrapper
 
 // Show a specific slide
 function showSlide(n) {
