@@ -18,6 +18,8 @@ header {
 }
 
 
+
+
 html, body {
     overflow-x: visible; /* Prevents horizontal scrolling */
     max-width: 100%; /* Ensures content doesn’t stretch too far */
