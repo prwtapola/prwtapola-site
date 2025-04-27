@@ -79,24 +79,29 @@ function currentSlide(n) {
 }
 
 // Attach event listeners to dots (manual control)
-dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => currentSlide(i));
-});
+if (dots.length > 0) {
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => currentSlide(i));
+    });
+}
 
 // **SWIPE FUNCTIONALITY FOR TOUCHSCREENS**
 let touchStartX = 0;
 let touchEndX = 0;
 
-// Detect touch start
-sliderContainer.addEventListener("touchstart", (event) => {
-    touchStartX = event.touches[0].clientX;
-});
+if (sliderContainer) {
+    // Detect touch start
+    sliderContainer.addEventListener("touchstart", (event) => {
+        touchStartX = event.touches[0].clientX;
+    });
 
-// Detect touch end
-sliderContainer.addEventListener("touchend", (event) => {
-    touchEndX = event.changedTouches[0].clientX;
-    handleSwipe();
-});
+    // Detect touch end
+    sliderContainer.addEventListener("touchend", (event) => {
+        touchEndX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+}
+
 
 // Function to determine swipe direction
 function handleSwipe() {
@@ -109,7 +114,9 @@ function handleSwipe() {
 }
 
 // Show the first slide on page load
-showSlide(slideIndex);
+if (slides.length > 0) {
+    showSlide(slideIndex);
+}
 
 
 
