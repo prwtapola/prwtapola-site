@@ -79,8 +79,14 @@ nav ul li a {
     display: inline-block;
 }
 
-nav ul li a.active, nav ul li a:hover {
+nav ul li a.active {
     background: #8c1d1d;
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #c0392b;
     color: #fff;
     border-radius: 5px;
 }
